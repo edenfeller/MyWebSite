@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Status</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style> 
+        	button:hover {
+            background-color: darkblue;
+            color: white;
+            }
+            .container {
+                display: flex;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                padding-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body style="background-color:#FFFAF1">
+        <h1>Contorl the important things in the house</h1>
+	    <h3>HOT WATER</h3>
+	    <div>
+            <div class="alert alert-success" role="alert">
+                there is hot water!
+            </div>
+            <p style="text-align: left">it was on for: 4 hours in the last: 12 hours</p>
+            <button style="margin: 10px">ON</button>
+            <button style="margin: 10px">OFF</button>
+        </div>
+        <h3>Plants</h3>
+        <div class="container">
+            <div class="alert alert-success" role="alert">
+                living room
+            </div>
+            <div class="alert alert-danger" role="alert">
+                kitchen
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+h1 {
+    color: purple;
+    text-align: center;
+}
+h3 {
+	margin: 50px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+div {
+	color: black;
+}
+button {
+	color: darkblue;
+	background-color: lightblue;
+	border-color: darkblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
