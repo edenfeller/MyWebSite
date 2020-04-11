@@ -1,0 +1,33 @@
+{% extends "layout2.html" %}
+
+{% block title %}
+    Book
+{% endblock %}
+
+{% block body %}
+    <h1>Book Details</h1>
+
+    <ul>
+        <li>Title: {{ book.title }}</li>
+        <li>Author: {{ book.author }}</li>
+        <li>Year: {{ book.year}}</li>
+        <li>isbn: {{book.isbn}}</li>
+    </ul>
+
+    <h2>Reviewes</h2>
+    <div class="form-group">
+        <form action="{{url_for('post_review', ISBN={{book.isbn}})}}" method="POST" style="margin: auto; display: table; width:60%; hight:45%;">
+            <label for="exampleFormControlTextarea1">Add a written review</label>
+            <textarea class="form-control" name="review" id="exampleFormControlTextarea1" rows="7"></textarea>
+            <input type="submit" style="font-family: Bangers;" id="reviewButton" class="btn btn-primary btn-lg" value="Send">
+        </form>
+    </div>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review.review }}</li>
+        {% else %}
+            <li>No reviews.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

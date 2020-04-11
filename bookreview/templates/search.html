@@ -1,0 +1,19 @@
+{% extends "layout2.html" %}
+
+{% block title %}
+    Books
+{% endblock %}
+
+{% block body %}
+    <h1>All Books</h1>
+
+   <div class="matches" style="display: table; margin: auto;font-family: Bangers; width:160%;">
+
+      <ul>
+        {% for result in results: %}
+        	<li> <a href="/books/{{result.isbn}}"> {{result.title}} of {{result.author}} ({{result.year}})</a></li>
+        {%endfor%}
+      </ul>
+    </div>
+
+{% endblock %}

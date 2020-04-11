@@ -1,0 +1,16 @@
+{% extends "layout2.html" %}
+{% block title %}
+    books
+{% endblock %}
+
+{% block body %}
+  <div class="middle", style="padding-left:16px">
+  <h1>Search for your book</h1>
+  <p>Welcome to the best books review website</p>
+  <p>I want to find:</p>
+  <form action="{{url_for('search')}}" style="margin: auto;" method="post">
+    <input type="text" placeholder="Harry Potter" id="" name="content">
+    <button type="submit" style="display:table;margin:auto;font-family: Bangers;" class="btn btn-primary">Search</button>
+  </form>
+</div>
+{% endblock %}
